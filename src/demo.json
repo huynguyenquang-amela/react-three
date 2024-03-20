@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Điểm 1",
+    "description": "/models/hocphan0.mov",
+    "camPos": {
+      "x": -2,
+      "y": 2,
+      "z": 0
+    },
+    "lookAt": {
+      "x": -6,
+      "y": 1,
+      "z": -1
+    }
+  },
+  {
+    "title": "Điểm 2",
+    "description": "/models/hocphan1.mov",
+    "camPos": {
+      "x": 0.5,
+      "y": 1,
+      "z": -1
+    },
+    "lookAt": {
+      "x": 1,
+      "y": 1,
+      "z": -6.2
+    }
+  },
+  {
+    "title": "Điểm 3",
+    "description": "/models/hocphan2.mov",
+    "camPos": {
+      "x": 1.61,
+      "y": 1,
+      "z": -1
+    },
+    "lookAt": {
+      "x": 6,
+      "y": 1,
+      "z": -2
+    }
+  }
+]
