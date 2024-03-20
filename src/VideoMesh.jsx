@@ -20,7 +20,7 @@ export function VideoMesh(props) {
   videoTexture.current = new THREE.VideoTexture(video)
 
   // Kích thước của mặt phẳng chứa video
-  const videoWidth = 3
+  const videoWidth = 3.5
   const videoHeight = 2
 
   // Tạo một mặt phẳng với kích thước của video
