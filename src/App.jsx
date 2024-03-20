@@ -1,10 +1,8 @@
 import { Suspense, useState, useRef } from 'react'
 import { Canvas, useFrame, useThree } from '@react-three/fiber'
 import { OrbitControls, Environment, Html, useProgress, Stats } from '@react-three/drei'
-import { Model } from './House'
 import { Demo } from './Demo'
 import TWEEN from '@tweenjs/tween.js'
-import annotations from './annotations.json'
 import demo from './demo.json'
 
 function Annotations({ controls }) {
