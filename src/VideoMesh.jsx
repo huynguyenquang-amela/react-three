@@ -7,10 +7,9 @@ export function VideoMesh(props) {
   const video = document.createElement('video')
   video.src = props?.url
   video.crossOrigin = 'Anonymous'
-  // video.loop = true
+  video.loop = true
   video.muted = true
 
-  console.log('props: ', props)
   useEffect(() => {
     if (videoTexture.current) {
       video.play()

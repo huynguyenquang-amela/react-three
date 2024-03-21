@@ -78,15 +78,16 @@ export default function App() {
   const ref = useRef()
 
   return (
-    <Canvas camera={{ position: [8, 2, 12] }}>
-      <OrbitControls ref={ref} target={[8, 2, 3]} />
+    <Canvas camera={{ position: [0, 2, 4.5] }}>
+      {/* <OrbitControls ref={ref} target={[8, 2, 3]} /> */}
       <Suspense fallback={<Loader />}>
         <Environment preset="forest" background blur={0.75} />
         {/* <Model /> */}
         {/* <Demo /> */}
         <DemoSubject />
-        <Annotations controls={ref} />
-        <Tween />
+
+        {/* <Annotations controls={ref} /> */}
+        {/* <Tween /> */}
       </Suspense>
       <Stats />
     </Canvas>
