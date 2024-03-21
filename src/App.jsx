@@ -2,6 +2,7 @@ import { Suspense, useState, useRef } from 'react'
 import { Canvas, useFrame, useThree } from '@react-three/fiber'
 import { OrbitControls, Environment, Html, useProgress, Stats } from '@react-three/drei'
 import { Demo } from './Demo'
+import { DemoSubject } from './DemoSubject'
 import TWEEN from '@tweenjs/tween.js'
 import demo from './demo.json'
 
@@ -77,14 +78,16 @@ export default function App() {
   const ref = useRef()
 
   return (
-    <Canvas camera={{ position: [8, 2, 12] }}>
-      <OrbitControls ref={ref} target={[8, 2, 3]} />
+    <Canvas camera={{ position: [0, 2, 4.5] }}>
+      {/* <OrbitControls ref={ref} target={[8, 2, 3]} /> */}
       <Suspense fallback={<Loader />}>
         <Environment preset="forest" background blur={0.75} />
         {/* <Model /> */}
-        <Demo />
-        <Annotations controls={ref} />
-        <Tween />
+        {/* <Demo /> */}
+        <DemoSubject />
+
+        {/* <Annotations controls={ref} /> */}
+        {/* <Tween /> */}
       </Suspense>
       <Stats />
     </Canvas>

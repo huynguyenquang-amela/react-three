@@ -10,7 +10,6 @@ export function VideoMesh(props) {
   video.loop = true
   video.muted = true
 
-  console.log('props: ', props)
   useEffect(() => {
     if (videoTexture.current) {
       video.play()

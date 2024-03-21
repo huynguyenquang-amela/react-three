@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1,
+    "title": "Question 1",
+    "answers": [
+      {
+        "id": 1,
+        "title": "Answer 1",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "title": "Answer 2",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "title": "Answer 3",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "title": "Answer 4",
+        "isCorrect": false
+      }
+    ]
+  }
+]

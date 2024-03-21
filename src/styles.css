@@ -52,3 +52,72 @@ svg text {
   color: #ffffff;
   font-family: monospace;
 }
+
+.animate {
+  transition: 1s;
+  transform: translateY(-50%);
+  opacity: 1 !important;
+}
+
+.list-questions {
+  opacity: 0;
+}
+
+.hide {
+  transition: 1s;
+  transform: translateY(50%);
+  opacity: 0 !important;
+}
+
+.question {
+  color: #fff;
+  border: 1px solid #fff;
+  width: 300px;
+  padding: 15px 10px;
+  padding-left: 20px;
+  border-radius: 10px;
+  box-shadow: 3px 0px 10px 0px #b7c2e9;
+  border: 1px solid #b7c2e9;
+  text-align: center;
+}
+
+.answer {
+  color: #fff;
+  border: 1px solid #b7c2e9;
+  width: 300px;
+  padding: 5px 10px;
+  padding-left: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 3px 0px 10px 0px #b7c2e9;
+  &:hover {
+    background: #7a94e9;
+  }
+}
+
+.active {
+  background: #7a94e9;
+}
+
+.skip {
+  color: #fff;
+  border: 1px solid #fff;
+  width: 65px;
+  padding: 10px;
+  padding-left: 20px;
+  cursor: pointer;
+  margin-top: 50px;
+  border: 1px solid #b7c2e9;
+  box-shadow: 3px 0px 10px 0px #b7c2e9;
+  border-radius: 10px;
+  opacity: 0;
+  &:hover {
+    background: #7a94e9;
+  }
+}
+
+.progress-bar {
+  height: 24px;
+  width: 0;
+  background: red;
+}
