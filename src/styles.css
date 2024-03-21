@@ -52,3 +52,56 @@ svg text {
   color: #ffffff;
   font-family: monospace;
 }
+
+.animate {
+  transition: 1s;
+  transform: translateY(-50%);
+  opacity: 1 !important;
+}
+
+.list-questions {
+  opacity: 0;
+}
+
+.hide {
+  transition: 1s;
+  transform: translateY(50%);
+  opacity: 0 !important;
+}
+
+.question {
+  color: #fff;
+  border: 1px solid #fff;
+  width: 300px;
+  padding: 10px;
+  padding-left: 20px;
+}
+
+.answer {
+  color: #fff;
+  border: 1px solid #fff;
+  width: 300px;
+  padding: 10px;
+  padding-left: 20px;
+  cursor: pointer;
+  &:hover {
+    background: #7a94e9;
+  }
+}
+
+.active {
+  background: #7a94e9;
+}
+
+.skip {
+  color: #fff;
+  border: 1px solid #fff;
+  width: 65px;
+  padding: 10px;
+  padding-left: 20px;
+  cursor: pointer;
+  margin-top: 100px;
+  &:hover {
+    background: #7a94e9;
+  }
+}

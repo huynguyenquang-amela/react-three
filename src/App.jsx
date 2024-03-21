@@ -2,6 +2,7 @@ import { Suspense, useState, useRef } from 'react'
 import { Canvas, useFrame, useThree } from '@react-three/fiber'
 import { OrbitControls, Environment, Html, useProgress, Stats } from '@react-three/drei'
 import { Demo } from './Demo'
+import { DemoSubject } from './DemoSubject'
 import TWEEN from '@tweenjs/tween.js'
 import demo from './demo.json'
 
@@ -82,7 +83,8 @@ export default function App() {
       <Suspense fallback={<Loader />}>
         <Environment preset="forest" background blur={0.75} />
         {/* <Model /> */}
-        <Demo />
+        {/* <Demo /> */}
+        <DemoSubject />
         <Annotations controls={ref} />
         <Tween />
       </Suspense>
